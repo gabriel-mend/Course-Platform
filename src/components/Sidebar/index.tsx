@@ -16,24 +16,24 @@ const Sidebar: React.FC = () => {
 
             <ButtonsContainer>
                 <ButtonLink>
-                    <img src={HomeIcon} />
+                    <img src={HomeIcon} alt=""/>
                 </ButtonLink>
                 <ButtonLink>
-                    <img src={ClassIcon} />
+                    <img src={ClassIcon} alt="" />
                 </ButtonLink>
                 <ButtonLink>
-                    <img src={UserIcon} />
+                    <img src={UserIcon} alt="" />
                 </ButtonLink>
                 <ButtonLink>
-                    <img src={MessageIcon} />
+                    <img src={MessageIcon} alt="" />
                 </ButtonLink>
                 <ButtonLink>
-                    <img src={ConfigIcon} />
+                    <img src={ConfigIcon} alt="" />
                 </ButtonLink>
             </ButtonsContainer>
 
             <ExitButton>
-                <img src={ExitIcon} />
+                <img src={ExitIcon} alt="" />
             </ExitButton>
           </Bar>
       </Container>

@@ -9,7 +9,7 @@ const HelloUser: React.FC = () => {
           <UserName>Hello Gabriel!</UserName>
           <WellcomeMessage>It’s good to see you again.</WellcomeMessage>
           <UserImgContainer>
-            <img src={UserImg} />
+            <img src={UserImg} alt="user"/>
           </UserImgContainer>
       </Container>
   );
