@@ -48,7 +48,6 @@ export const ButtonLink = styled.a`
 `;
 
 export const ExitButton = styled.a`
-    margin-top: 220px;
     border: 0px;
     background: transparent;
     margin-bottom: 40px;

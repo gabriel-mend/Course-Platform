@@ -10,10 +10,22 @@ export const Container = styled.div`
     border-radius: 14px;
     padding-right: 24px;
     padding-left: 10px;
+    margin-top: 16px;
 
     & .progress {
         width: 40px;
         height: 40px;
+    }
+
+    & div {
+        display: flex;
+    }
+
+    & div:nth-child(2) { 
+        flex-direction: column;
+    }
+    & div img {
+        margin-right: 8px;
     }
 `;
 
@@ -39,8 +51,9 @@ export const Author = styled.span`
 export const Button = styled.button`
     width: 120px;
     height: 40px;
-    background: #0C0B0B;
-    color: #fff;
+    background: transparent;
+    border: 2px solid #0C0B0B !important;
+    color: #0C0B0B;
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -48,4 +61,10 @@ export const Button = styled.button`
     font-weight: bold;
     font-size: 13px;
     line-height: 15px;
-`; 
+`;
+
+export const InfoText = styled.p`
+    font-size: 13px;
+    line-height: 15px;
+    color: #0C0B0B;
+`;

@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-tabs": "^2.3.2",
     "@types/styled-components": "^5.1.3"
   }
 }
