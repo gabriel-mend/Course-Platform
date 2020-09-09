@@ -39,6 +39,7 @@ export const TabContainer = styled.div`
     max-height: 400px;
     padding-right: 6px;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     ::-webkit-scrollbar {
         width: 2px;
         
