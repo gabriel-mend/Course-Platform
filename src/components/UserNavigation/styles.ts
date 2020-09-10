@@ -23,10 +23,12 @@ export const NotificationButton = styled.img`
 export const UserProfile = styled.img`
     width: 40px;
     height: 40px;
+    margin-right: 5px;
     border-radius: 8px;
     object-fit: cover;
 `;
 
 export const UserSettings = styled.div`
-    
+    display: flex;
+    align-items: center;
 `;
