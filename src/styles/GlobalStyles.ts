@@ -9,7 +9,10 @@ export default createGlobalStyle`
     *, button, input {
         font-family: Roboto, sans-serif;
     }
-
+    p {
+        color: #0C0B0B;
+    }
+    
     h1, h2, h3, h4, h5, h6 {
         font-family: "Baloo Bhai 2";
     }
