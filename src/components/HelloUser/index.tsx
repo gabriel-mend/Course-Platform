@@ -2,11 +2,13 @@ import React from 'react';
 
 import { Container, UserName, WellcomeMessage, UserImgContainer  } from './styles';
 import UserImg from '../../styles/assets/images/Illustration.svg';
-
-const HelloUser: React.FC = () => {
+interface UserProps {
+  name: string;
+}
+const HelloUser: React.FC<UserProps> = ({ name }) => {
   return (
       <Container>
-          <UserName>Hello Gabriel!</UserName>
+          <UserName>Hello {name}!</UserName>
           <WellcomeMessage>It’s good to see you again.</WellcomeMessage>
           <UserImgContainer>
             <img src={UserImg} alt="user"/>

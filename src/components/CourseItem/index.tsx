@@ -12,23 +12,35 @@ import {
 import ClockIcon from '../../styles/assets/icons/clock-icon.svg';
 import FlameIcon from '../../styles/assets/icons/flame-icon.svg';
 
-const CourseItem: React.FC = () => {
+interface CourseProps {
+    courseName: string;
+    courseAuthor: string;
+    courseDuration: string;
+    courseRating: number;
+}
+
+const CourseItem: React.FC<CourseProps> = ({
+    courseName,
+    courseAuthor,
+    courseDuration,
+    courseRating
+}) => {
   return (
         <Container>
             <CourseLogo>
 
             </CourseLogo>
             <div>
-                <Title>Spanish</Title>
-                <Author>by Alejandro Velazquez</Author>
+                <Title>{courseName}</Title>
+                <Author>by {courseAuthor}</Author>
             </div>
             <div>
                 <img src={ClockIcon} alt=""/>
-                <InfoText>6h 30min</InfoText>
+                <InfoText>{courseDuration}</InfoText>
             </div>
             <div>
                 <img src={FlameIcon} alt=""/>
-                <InfoText>4.9</InfoText>
+                <InfoText>{courseRating}</InfoText>
             </div>
 
             <Button>View Course</Button>

@@ -8,7 +8,7 @@ import CoursesMain from '../CoursesMain';
 const Main: React.FC = () => {
   return (
       <Container>
-          <HelloUser />
+          <HelloUser name="Gabriel" />
           <CourseSlider />
           <CoursesMain />
       </Container>

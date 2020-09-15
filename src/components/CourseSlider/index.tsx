@@ -6,7 +6,11 @@ import CourseProgress from '../CourseProgress';
 const CourseSlider: React.FC = () => {
   return (
       <Container>
-        <CourseProgress />
+        <CourseProgress
+          courseName="Spanish B2"
+          courseAuthor="Alejandro Velazquez"
+          coursePercentage={83}
+        />
       </Container>
   );
 }

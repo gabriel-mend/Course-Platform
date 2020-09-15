@@ -20,14 +20,12 @@ const CoursesMain: React.FC = () => {
 
                 <TabPanel>
                   <TabContainer>
-                    <CourseItem />
-                    <CourseItem />
-                    <CourseItem />
-                    <CourseItem />
-                    <CourseItem />
-                    <CourseItem />
-                    <CourseItem />
-                    <CourseItem />
+                    <CourseItem 
+                      courseName="Spanish B2"
+                      courseAuthor="Alejandro Velazquez"
+                      courseDuration="6h 30min"
+                      courseRating={4.9}
+                    />
                   </TabContainer>
                 </TabPanel>
               </Tabs>

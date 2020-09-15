@@ -10,21 +10,29 @@ import {
     CourseLogo
 } from './styles';
 
-const percentage = 83;
+interface CourseProps {
+    courseName: string;
+    courseAuthor: string;
+    coursePercentage: number;
+}
 
-const CourseProgress: React.FC = () => {
+const CourseProgress: React.FC<CourseProps> = ({
+    courseName,
+    courseAuthor,
+    coursePercentage,
+}) => {
   return (
       <Container>
             <CourseLogo>
 
             </CourseLogo>
             <div>
-                <Title>Spanish</Title>
-                <Author>by Alejandro Velazquez</Author>
+                <Title>{courseName}</Title>
+                <Author>by {courseAuthor}</Author>
             </div>
             <CircularProgressbar 
-                value={percentage} 
-                text={`${percentage}%`} 
+                value={coursePercentage} 
+                text={`${coursePercentage}%`} 
                 className="progress"
                 styles={ 
                     buildStyles({
